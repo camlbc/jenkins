@@ -5,7 +5,7 @@
 MACHINE_DESTINATION="ec2-user@ec2-3-17-183-87.us-east-2.compute.amazonaws.com"
 PATH_SECRET_KEY="/secrets/kp-camille.pem"
 
-chmod 400 /secrets/kp-camille.pem
+chmod 400 PATH_SECRET_KEY
 
 #On installe Java sur la machine distante 
 #ne pas oublier de mettre -o StrictHostKeyChecking=no pour ssh afin d'être non-interactif sur l'acception de la vérification de host
