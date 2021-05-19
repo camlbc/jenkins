@@ -1,7 +1,7 @@
 #!/bin/bash
 #deploy_local.sh
-mkdir app/ 
-cp helloWorld.class app/
+mkdir -p /app
+cp helloWorld.class /app
 pwd
-cd app/
+cd /app
 java helloWorld
