@@ -1,0 +1,11 @@
+#!/bin/bash
+#playbook-2.yml
+---
+- name: Deploy Java program
+  hosts: all
+  become: yes
+  
+  tasks:
+    - name: Installation de Docker
+      shell: amazon-linux-extras install Docker 
+      register: result_install
